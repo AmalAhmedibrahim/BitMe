@@ -1,0 +1,96 @@
+.animation
+{
+    position: absolute;
+
+    &--rotate
+    {
+        animation: swing 10s  linear infinite;
+    }
+    &--zoomIn
+    {
+        animation:zoomIn 3s  linear infinite;
+        // animation-duration: 8s;
+        // animation-name: zoomIn;
+    }
+    &--rotateInDownRight
+    {
+        animation:rotateInDownRight 5s  linear infinite;
+        // animation-duration: 5s;
+        // animation-name: rotateInDownRight;
+    }
+    &--fadeInDown
+    {
+        animation:fadeInDown 6s  linear infinite;
+        // animation-duration: 5s;
+        // animation-name: fadeInDown;
+    }
+    &--fadeInRight
+    {
+        animation:fadeInRight 5s  linear infinite;
+        // animation-name: fadeInRight;
+        // animation-duration: 2s;
+    }
+}
+@keyframes swing
+{
+    20% {
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+        transform: rotate3d(0, 0, 1, -15deg);
+    }
+    60% {
+        transform: rotate3d(0, 0, 1, 10deg);
+    }
+    80% {
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+    100% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+}
+@keyframes zoomIn
+{
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes rotateInDownRight
+{
+    0% {
+        transform-origin: right bottom;
+        transform: rotate3d(0, 0, 1, 45deg);
+        opacity: 0;
+    }
+    100% {
+        transform-origin: right bottom;
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes  fadeInDown
+{
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes fadeInRight
+{
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

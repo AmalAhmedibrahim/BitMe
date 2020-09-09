@@ -1,0 +1,46 @@
+.shop-list
+{
+    width: 100%;
+    //height: 40rem;
+    display: flex;
+    justify-content: space-evenly;
+     flex-wrap: wrap;
+     margin-top: 10rem;
+     flex-direction: column;
+     .shop-list-txt
+     {
+         margin-bottom: 5rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+         align-items: center;
+        .shop-list-head
+        {
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            line-height: 1.3;
+            color: $white-color;
+            font-size: 5rem;
+        }
+        .shop-list-span
+        {
+            display: block;
+            color: $gold-color;
+            font-family:  'Allura';
+            font-size: 6rem;
+        }
+        }
+    .animation
+    {
+        z-index: -5;
+    }
+     .shop-list-img
+     {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         flex-wrap: wrap;
+         //margin-top: 10rem;
+         margin-bottom:10rem;
+     }
+}

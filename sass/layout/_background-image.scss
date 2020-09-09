@@ -1,0 +1,49 @@
+body
+{
+    background-image: url("../images/body-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.background
+{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    &-image--1
+    {
+        background-image: url("../images/our-service-bg.jpg") ;
+    }
+    &-image--2
+    {
+        background-image: url("../images/popular-menu-bg.jpg");
+    }
+    &-image--3
+    {
+        background-image: url("../images/reviews-bg.jpg");
+    }
+}
+
+
+
+
+// .background1
+// {
+//     background-image: url("../images/our-service-bg.jpg");
+//     background-attachment: fixed;
+//     background-size: cover;
+// }
+// .background2
+// {
+//     background-image: url("../images/popular-menu-bg.jpg");
+//     background-attachment: fixed;
+//     background-size: cover;
+// }
+// .background3
+// {
+//     background-image: url("../images/reviews-bg.jpg");
+//     background-size: cover;
+//     background-attachment: fixed;
+// }

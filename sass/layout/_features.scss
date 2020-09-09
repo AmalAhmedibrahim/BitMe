@@ -1,0 +1,50 @@
+.features
+{
+    padding: 8rem;
+     display: flex;
+    justify-content: space-evenly;
+    .feature-img
+    {
+        width: 50rem;
+        height: 60rem;
+        img
+        {
+            width:100%
+        }
+    }
+    .left-side
+    {
+        display: flex;
+        flex-direction: column;
+        .feature-content
+        {
+            .feature-h3
+            {
+                text-transform: uppercase;
+                font-size: 3.5rem;
+                font-weight: 600;
+                color: $gold-color;
+                margin-bottom: 2.5rem;
+            
+            }
+            .feature-p
+            {
+                color: $light-color;
+                font-size: 2rem;
+                font-weight: 400;
+            }
+            width: 50rem;
+            height: 30rem;
+            margin-left: 5rem;
+        }
+        .feature-slider
+        {
+            margin-top: 10rem;
+            width: 57rem;
+            height: 22rem;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+    }
+}

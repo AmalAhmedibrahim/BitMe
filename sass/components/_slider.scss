@@ -1,0 +1,17 @@
+.slider
+{
+    animation: infinite-shift-left 1000s linear infinite;
+    height: 65rem;
+}
+
+@keyframes  infinite-shift-left
+{
+    0%
+    {
+            background-position: 50000px;
+    }
+    100%
+    {
+            background-position: 0;
+    }
+}

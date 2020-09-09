@@ -1,0 +1,66 @@
+.booking-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    //flex-wrap: wrap;
+    width: 100%;
+    height:45rem;
+    // background-color: $black-color;
+   // margin-bottom: 5rem;
+    .img-holder
+    {
+        //width: 70rem;
+        width: 50%;
+        height: 45rem;
+        //margin-top: 3rem;
+        .booking-img
+        {
+            width: 100%;
+            height: 45rem;
+        }
+    }
+    .booking-content
+    {
+         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 60%;
+        height: 50rem;
+        .booking-content-cotainer
+        {
+            //  display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            // flex-wrap: wrap;
+            // justify-content: space-evenly;
+            margin-top: 10rem;
+            .text-h
+            {
+                color: $white-color;
+                text-transform: uppercase;
+                font-size: 6rem;
+                font-weight: 700;
+                margin-bottom: 2rem;
+            }
+            .text-s
+            {
+                color: $gold-color;
+                display: block;
+                color: #cdaa7c;
+                font-family: 'Allura';;
+                font-size: 5rem;
+                margin-bottom: 2rem;
+            }
+             .book-now-button-2
+            {
+                //smargin-bottom: rem;
+                display: block;
+                margin-left: 9rem;
+            }
+        }
+        }
+    }

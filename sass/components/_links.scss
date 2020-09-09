@@ -1,0 +1,66 @@
+.link-item
+{
+    display: inline-block;
+    color: $light-color;
+    text-decoration: none;
+    width: inherit;
+    padding: 0.4rem;
+    //margin: 0.1rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: transparent;
+   // border: 0.2rem solid $dark-color-opacity;
+    &--border
+    {
+        &:hover
+        {
+         color:$gold-color;
+         border: 0.1rem solid $gold-color;
+         position: relative;
+         //text-decoration: underline;
+         transition: all 0.3s ease-out;
+        }
+    }
+    &--move
+    {
+        color:$gold-color;
+            &::before
+            {
+                top: -5px;
+                display: inline-block;
+                position: relative;
+                content: " ";
+                background-color: $gold-color;
+                height: 0.2rem;
+                width: 0rem;
+                margin-right: 6px;
+               // padding: 
+               // transform: translateX(5px);
+                transition: all 0.2s ease;
+            }
+        &:hover
+        {
+            &::before
+            {
+                width: 0.8rem;
+            }
+        }
+    }
+}
+.caption
+{
+    display: inline-block;
+    height: 4rem;
+    width: 27rem;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: inherit;
+    color:$light-color;
+    background: $gold-color;
+    font-size: 1.5rem;
+
+}
